@@ -4,13 +4,13 @@ print('We\'ve all heard that a million monkeys banging on a million typewriters 
 
 lookFor = input("What word or phrase would you like the monkey to look for?\n")
 found = 1
-looking = ''
+
 while found != 0:
-    looking = looking + random.choice(string.ascii_letters)
-    print("The Monkey has mashed {} keys on the keyboard.".format(found), end="\r")
-    if len(looking) > len(lookFor):
-        looking = looking[1:]
+    for i in range(len(lookFor)):
+        looking = ''
+        looking = looking + random.choice(string.ascii_letters)
+        print("The Monkey has tried {} random words.".format(found), end="\r")
     found += 1
     if looking == lookFor:
-        print("The monkey found what you were looking for after mashing {} keys on his keyboard!".format(found))
+        print("The monkey found what you were looking for after {} random words!".format(found))
         found = 0
