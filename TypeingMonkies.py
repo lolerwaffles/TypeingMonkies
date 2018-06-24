@@ -1,4 +1,4 @@
-import random, string, multiprocessing
+import random, string
 
 print('We\'ve all heard that a million monkeys banging on a million typewriters will eventually reproduce the entire works of Shakespeare. Now, thanks to the Internet, we know this is not true.\n\n')
 
